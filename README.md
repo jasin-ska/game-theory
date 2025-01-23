@@ -2,9 +2,9 @@
 
 ![image](https://github.com/user-attachments/assets/05df9a18-e65b-4cc8-9fd7-306b5ca8c7e2)
 
-Program wyznacza kolejne węzły w drzewie stanów gry, bazując na opisanych zasadach. Następnie od dołu wyznacza MNE w każdym węźle, uwzględniając przypadki strategii zdominowanych (mamy wtedy 1 PNE). Wynik to drzewo stanów gry, wyświetlające węzły w formacie 
+Program wyznacza kolejne węzły w drzewie stanów gry, bazując na opisanych zasadach. Następnie od dołu wyznacza MNE w każdym węźle, rozpatrując oczekiwany zysk z poddrzew (podgier?) tego węzła, uwzględniając przypadki strategii zdominowanych (mamy wtedy 1 PNE). Wynik to drzewo stanów gry, wyświetlające węzły w następującym formacie:
 ```
-[ D(liczba_nieobecności_Dawida, zysk_Dawida), E(liczba_nieobecności_Ewy, zysk_Ewy) ] MNE(d: ppb_Dawida_pójścia_na_wykład, e: ppb_Ewy_pójścia_na_wykład)
+[ D(liczba_nieobecności_Dawida, aktualny_zysk_Dawida), E(liczba_nieobecności_Ewy, aktualny_zysk_Ewy) ] MNE(d: ppb_Dawida_pójścia_na_wykład, e: ppb_Ewy_pójścia_na_wykład)
 ```
 
 Uzyskane drzewo, przedstawiające postać ekstensywną gry oraz ppb do równowagi doskonałej (MNE):
