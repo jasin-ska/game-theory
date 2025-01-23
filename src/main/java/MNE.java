@@ -59,11 +59,11 @@ public class MNE {
     if (d0e1.getDawidMNEPayoff() > d1e1.getDawidMNEPayoff() && d0e0.getDawidMNEPayoff() > d1e0.getDawidMNEPayoff()) {
       if (d0e1.getEwaMNEPayoff() > d0e0.getEwaMNEPayoff())
         return Optional.of(new MNE(
-                1.0, 1.0, d0e1.getDawidMNEPayoff(), d0e1.getEwaMNEPayoff()
+                0.0, 1.0, d0e1.getDawidMNEPayoff(), d0e1.getEwaMNEPayoff()
         ));
       else
         return Optional.of(new MNE(
-                1.0, 0.0, d0e0.getDawidMNEPayoff(), d0e0.getEwaMNEPayoff()
+                0.0, 0.0, d0e0.getDawidMNEPayoff(), d0e0.getEwaMNEPayoff()
         ));
     }
     // ewa go dominates
